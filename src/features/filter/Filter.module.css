@@ -1,0 +1,71 @@
+.filter {
+	float: left;
+
+	min-width: 180px;
+	max-width: 20vh;
+	margin-right: 20px;
+	padding: 5px 20px 20px;
+
+	border-radius: 10px;
+	background-color: #FFF;
+}
+
+.currency {
+	padding-top: 5px;
+}
+
+.transferCheckers {
+	margin-top: 20px;
+}
+
+.announcement {
+	font-weight: bold;
+}
+
+.currencyButtons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.currencyButton {
+	min-height: 30px;
+	max-height: 30px;
+	margin-top: 10px;
+	margin-right: 15px;
+
+	color: #FFF;
+	border-radius: 10px;
+	background: #3498DB;
+}
+
+.currencyButton:hover {
+	color: #FFF;
+	background: #2980B9;
+}
+
+/* .rub {
+
+}
+
+.usd {
+
+}
+
+.eur {
+
+} */
+
+.active {
+	background-color: #2042FF;
+}
+
+.radioButtons {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 5px;
+}
+
+.radio {
+	margin-top: 5px;
+}
