@@ -1,14 +1,10 @@
 import ticketsListReduser, { changeCurrence, transferFilter } from '../ticketsList/ticketsListSlice';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
 import TicketsList from "../ticketsList/TicketsList";
 import { configureStore } from "@reduxjs/toolkit";
 import { Store } from '../../app/store';
 import { TicketsState } from '../../types/ticket';
-
-Enzyme.configure({ adapter: new Adapter() });
 
 describe("currency and transfers", () => {
     const initialState: TicketsState = {
@@ -93,7 +89,7 @@ describe("currency and transfers", () => {
         });
 
         const component = renderWithRedux(<TicketsList />, store);  //"Loading..."
-        await component.findAllByText(/13600/);  //render all tickets
+        await component.findByText(/13600/);  //render all tickets
 
         store.dispatch(transferFilter(0));
         store.dispatch(transferFilter(1));
