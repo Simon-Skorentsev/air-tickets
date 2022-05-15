@@ -1,7 +1,17 @@
-To run this app you need:
+## Описание
+Страница выдачи билетов с фильтрами
 
-    npm i
+## Live:
+- https://air-tickets-chi.vercel.app/
 
-    npx json-server src/API/tickets.json --watch
+## Используемые технологии:
+- TS
+- React
+- Redux Toolkit
+- React Testing Library
+- Jest
 
-    npm start
+## Для запуска приложения необходимо:
+- npm i
+- npx json-server src/API/tickets.json --watch
+- npm start
